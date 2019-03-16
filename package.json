@@ -1,7 +1,7 @@
 {
-  "name": "hello-world",
+  "name": "nice-locations",
   "version": "0.1.0",
-  "description": "Hello World application",
+  "description": "Nice Locations",
   "author": "Dawid Dominiak",
   "license": "MIT",
   "scripts": {
