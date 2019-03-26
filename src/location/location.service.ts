@@ -1,12 +1,16 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Location } from './location.entity';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class LocationService {
-  public list(): string[] {
-    return [
-      'Location 1',
-      'Location 2',
-      'Location 3',
-    ];
+  constructor(
+    @InjectRepository(Location)
+    private readonly locationRepository: Repository<Location>,
+  ) { }
+
+  public async list(): Promise<Location[]> {
+    return this.locationRepository.find();
   }
 }
