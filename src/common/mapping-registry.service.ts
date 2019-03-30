@@ -12,6 +12,6 @@ export class MappingRegistryService {
   }
 
   public map<T>(source: string, target: string, object: any): T {
-    return automapper.map(source, target, Object) as T;
+    return automapper.map(source, target, object) as T;
   }
 }

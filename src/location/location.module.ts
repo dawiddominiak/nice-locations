@@ -3,7 +3,7 @@ import { LocationController } from './location.controller';
 import { LocationService } from './location.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Location } from './location.entity';
-import { CommonModule } from 'src/common/common.module';
+import { CommonModule } from '../common/common.module';
 import { LocationMappingService } from './location-mapping.service';
 
 @Module({

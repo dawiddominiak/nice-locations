@@ -1,4 +1,4 @@
-import { MappingService } from 'src/common/mapping.service';
+import { MappingService } from '../common/mapping.service';
 import { Location } from './location.entity';
 import { LocationDto } from './location.dto';
 import { Injectable } from '@nestjs/common';
