@@ -21,9 +21,8 @@ describe('AppController (e2e)', () => {
       .then(({ text }) => {
         expect(text).toMatchCompiledHandlebarsTemplate('list.hbs', {
           locations: [
-            'Location 1',
-            'Location 2',
-            'Location 3',
+            { name: 'Nice location 1' },
+            { name: 'Nice location 2' },
           ],
         });
       });
